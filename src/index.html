@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 8</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <ul>
-      <li><a href="01-gallery.html">Image gallery</a></li>
-      <li><a href="02-video.html">Video playback</a></li>
-      <li><a href="03-feedback.html">Feedback form</a></li>
-    </ul>
+    <div class="container">
+      <div class="containe-form">
+        <form class="search-form" id="search-form">
+          <input
+            class="input-form"
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="button" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="gallery">
+        <!-- Карточки изображений -->
+      </div>
+      <button type="button" class="load-more button">
+        <span class="spinner is-hidden" role="status" aria-hidden="true"></span>
+        <span class="label">Load more</span>
+      </button>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
